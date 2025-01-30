@@ -1,0 +1,25 @@
+{
+  "name": "cli-fakebook-messenger",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "blessed": "^0.1.81",
+    "cheerio": "^1.0.0",
+    "delay": "^6.0.0",
+    "logger": "^0.0.1",
+    "nodemon": "^3.1.9",
+    "playwright": "^1.50.0",
+    "puppeteer": "^24.1.1",
+    "readline-sync": "^1.4.10"
+  }
+}
