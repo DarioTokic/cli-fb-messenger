@@ -3,7 +3,7 @@ import puppeteer from "puppeteer";
 export const connectToSite = async () => {
   try {
     const browser = await puppeteer.launch({
-      headless: false,
+      headless: true,
       userDataDir:
         "/Users/xabaras666/Library/Application Support/Google/Chrome/Profile 3",
       args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-infobars"],
