@@ -1,10 +1,8 @@
 export const conversationsExtractor = async ($) => {
   const conversations = [];
-  let conversationNodes = $(
+  const conversationNodes = $(
     ".x78zum5.xdt5ytf.x1iyjqo2.x6ikm8r.x10wlt62.x1n2onr6 > div > div > .x1n2onr6 > .x78zum5.xdt5ytf",
   );
-
-  conversationNodes = conversationNodes.slice(0, 10);
 
   conversationNodes.each((index, element) => {
     const link = $(element).find("a").attr("href");

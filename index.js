@@ -16,7 +16,6 @@ import {
   createChatBox,
   createMessagesBox,
   createMessageInput,
-  createMessageBubble,
   updateMessages,
   updateChatList,
 } from "./functions/layout.js";
@@ -98,13 +97,9 @@ import {
     // Start the mutation observer to monitor changes
     startMutationObserver();
 
-    // Extract current conversation
+    // Extract current conversation, conversations and messages
     store.conversation = await currentConversationExtractor(store.$);
-
-    // Extract conversations
     store.conversations = await conversationsExtractor(store.$);
-
-    // Extract messages
     store.messages = await messagesExtractor(store.$);
 
     updateChatList(chatList, store.conversations, screen);
